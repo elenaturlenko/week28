@@ -1,0 +1,13 @@
+.blue {
+
+    &:nth-child(1) {
+        font-size: 18px;
+        color: #d0e7ed;
+        background-color: #229cab;
+    }
+
+    &:nth-child(2) {
+        color: #eefeff;
+        background-color: #2cc1d5;
+    }
+}
