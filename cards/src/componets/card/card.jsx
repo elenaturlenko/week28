@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import "./card.scss";
 import "./blue.scss";
 import "./green.scss";
@@ -5,8 +6,14 @@ import "./red.scss";
 import "./dark.scss";
 
 export function TariffCard(props) {
+    const [isSelected, setSelected] = useState(false);
+
+    const handleClick = () => {
+        setSelected(!isSelected);
+    }
+
     return (
-        <div className={"card " + (props.isSelected ? "selected" : "")}>
+        <div onClick={handleClick}  className={"card " + (isSelected ? "selected" : "")}>
             <div className={"card-item " + props.theme}>
                 <span className="tariff">{props.tariff}</span>
             </div>

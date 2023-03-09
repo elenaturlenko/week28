@@ -17,8 +17,7 @@
     "tariff": "Безлимитный 550",
     "price": "550",
     "speed": "до 100 Мбит/сек",
-    "theme": "red",
-    "isSelected": "true"
+    "theme": "red"
 },
 {
     "id": "04",
